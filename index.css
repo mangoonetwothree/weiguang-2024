@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* 版心 */
+.wrapper {
+    width: 80vw;
+    margin:0 auto;
+}
+
+/* 头部 */
+.header {
+    height:40vh;
+    background-color: #72d6e1;
+    text-align: center;
+}
+
+/* 头部图片 */
+h1 a img {
+    margin:6vh auto;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+}
+
+/* 导航 */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background-color: #a67fcd;
+}
+
+/* 去掉小圆点 */
+ul {
+    list-style: none;
+}
+
+/* 横排 */
+.nav li {
+    float:left;
+}
+/* 转换成行内块元素 并设置宽高 */
+.nav li a {
+    display: inline-block;
+    width: 15vw; 
+    height: 3vh; 
+    text-align: center;
+    line-height:3vh ;
+    text-decoration: none;
+    font-weight: 700;
+    color:black;
+}
+
+.nav li a:hover {
+    color:white;
+}
+
+.section {
+    background-color: #72d6e1;
+    height:55vh;
+    overflow: hidden;
+}
+
+.box {
+    margin:0 auto 0;
+    width:40vw;
+    height:44vh;
+    background-color: #fff;
+    background-image: url(./background1.jpg);
+    border-radius: 20px;
+}
+
+.monarch {
+    display: flex;
+    justify-content: center;
+    line-height: 44vh;
+    font-size: 32px;
+    color: #dd7686;
+    container-type:size;
+    font-size: 2.5cqw;
+}
+
+.box1 {
+    width: 12vh;
+    height: 4vh;
+    background-color: #5189b5;
+    text-align: center;
+    line-height:4vh ;
+    margin:1vh auto;
+    color:#eee;
+    font-weight: 700;
+    border-radius: 25px;
+}
+.infbox2 {
+    margin-left: 16vh;
+    margin-top: 2vh;
+}
+.infbox2 img {
+    width: 18vw;
+    height:44vh;
+    border-radius: 15px;
+}
+
+.infbox2 ul {
+    float:right;
+    width:36vw;
+    margin-right:8vw ;
+
+}
+
+.infbox2 ul li {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-weight: 700;
+}
+
+.infbox2 p {
+    line-height: 1.8;
+}
+
+.hobbox2,.hobbox3 {
+    width: 60vw;
+    height: 24vh;
+    padding: 1vh;
+    border: 1px solid #62afb6;
+    border-radius: 15px;
+    margin: 1vh auto;
+    line-height: 1.8;
+    container-type: size;
+}
+
+.hobbox2 img {
+    float:right;
+    width: 20vw;
+    height:22vh;
+}
+
+.hobbox2 p {
+    width: 60vw;
+    font-size: 1rem;
+    font-size: 1.8cqw;
+    font-weight: 700;
+}
+
+.hobbox3 p{
+    width: 60vw;
+    font-size: 1rem;
+    font-size: 1.8cqw;
+    font-weight: 700;
+}
+
+.hobbox3 img {
+    float:right;
+    width: 20vw;
+    height:22vh;
+}
+
+.expbox2 {
+    margin:1vh auto;
+    width:52vw;
+    height:48vh;
+    background-color: #110d0c;
+    border-radius: 20px;
+    container-type: size;
+}
+
+.left {
+    float:left;
+    width:14vw;
+    height:48vh;
+    background-color: #fdca17;
+    border-radius: 20px;
+    font-size: 2cqw;
+    color:#1e50a2;
+}
+
+
+.right {
+    float:right;
+    width: 38vw;
+    height:48vh;
+    background-color:#110d0c;
+    border-radius: 20px;
+    font-size: 2cqw;
+
+}
+
+.right li {
+    float:left;
+    margin: 1vh 1vw;
+    padding: 1vh;
+    width:17vw;
+    height:22vh;
+    background-color: #1e50a2;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    color:#fff2df;
+
+}
+
+.right p {
+    text-align: left;
+}
+.left li {
+    height:16vh;
+    text-align: center;
+    line-height: 16vh;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.gobox2 {
+    width:52vw;
+    height: 48vh;
+    margin: 1vh auto;
+    container-type: size;
+}
+
+.left-list {
+    float:left;
+    width:auto;
+    height:48vh;
+}
+
+.right-list {
+    float:right;
+    width: auto;
+    height:48vh;
+}
+
+.left-list,.right-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lf,.rt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1vh;
+    width: 14vw;
+    height:14vh;
+    background-color:#C86381;
+    box-shadow: 0.5vh 0.5vh #584A85;
+    border: 1px solid #C86381;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 2cqw;
+
+}
+
+.rt {
+    margin-left: auto;
+}
+
+.idbox2 {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+    width:52vw;
+    height:48vh;
+    background-color: #B61032;
+    border-radius: 20px;;
+}
+
+.idbox3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1.5vh;
+    background-color:#D19C97;
+    border-radius: 20px;;
+    font-weight: 700;
+    font-size: 2cqw;
+}
+
+.idbox4 {
+    grid-row: 1/3;
+    background-image: url(./slider01.jpg);
+    background-size:26vw 32vh;
+
+}
